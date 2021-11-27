@@ -7,6 +7,12 @@
 # General application configuration
 use Mix.Config
 
+config :breast_feeding_blog, BreastFeeding.Repo,
+  database: "breast_feeding_blog_repo",
+  username: "postgres",
+  password: "",
+  hostname: "localhost"
+
 config :breast_feeding_blog,
   ecto_repos: [BreastFeedingBlog.Repo]
 
