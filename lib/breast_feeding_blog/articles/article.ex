@@ -4,7 +4,6 @@ defmodule BreastFeedingBlog.Articles.Article do
 
   schema "articles" do
     field :content, :string
-    field :id, Ecto.UUID
     field :time, :utc_datetime
     field :title, :string
 
@@ -14,7 +13,7 @@ defmodule BreastFeedingBlog.Articles.Article do
   @doc false
   def changeset(article, attrs) do
     article
-    |> cast(attrs, [:title, :content, :time, :id])
-    |> validate_required([:title, :content, :time, :id])
+    |> cast(attrs, [:title, :content, :time])
+    |> validate_required([:title, :content, :time])
   end
 end

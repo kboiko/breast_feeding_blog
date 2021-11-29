@@ -7,7 +7,7 @@ defmodule BreastFeedingBlogWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_breast_feeding_blog_key",
-    signing_salt: "F3MvfIvN"
+    signing_salt: "P4CpshZe"
   ]
 
   socket "/socket", BreastFeedingBlogWeb.UserSocket,

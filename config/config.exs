@@ -7,22 +7,16 @@
 # General application configuration
 use Mix.Config
 
-config :breast_feeding_blog, BreastFeeding.Repo,
-  database: "breast_feeding_blog_repo",
-  username: "postgres",
-  password: "",
-  hostname: "localhost"
-
 config :breast_feeding_blog,
   ecto_repos: [BreastFeedingBlog.Repo]
 
 # Configures the endpoint
 config :breast_feeding_blog, BreastFeedingBlogWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "o02ksOX9VQnKRtdVHFW0uq4tVA4WObcVl3TV8WgtGuUjHqYdqNx+lRdjtK6YWbeK",
+  secret_key_base: "92dPuDwekmcua6XsMD2pSKTRQk4vmRHJQt12L0RIkD/0vVCN7o9yR4AP+Tu/Dy36",
   render_errors: [view: BreastFeedingBlogWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: BreastFeedingBlog.PubSub,
-  live_view: [signing_salt: "JOOzg548"]
+  live_view: [signing_salt: "ce+x0DuQ"]
 
 # Configures Elixir's Logger
 config :logger, :console,
